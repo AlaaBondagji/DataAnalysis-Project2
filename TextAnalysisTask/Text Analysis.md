@@ -3,8 +3,8 @@ Spam Emails
 ## Dataset Overview
 This project involves applying Sentiment Analysis to a dataset that contains messages categorized as either spam or ham (not spam). The analysis involves several preprocessing steps such as cleaning, removing frequent words, and lemmatization, which help prepare the data for a sentiment classifier. The goal is to identify patterns in the text that can distinguish spam from ham and to visualize the most frequent words in each category.
 ## Dataset
-  - Dataset Name: (spam_Emails_data)
-  - Source:(https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification)
+  - Dataset Name: (spam)
+  - Source:(https://drive.google.com/file/d/19Yz5vBQ3T174xeSOOqVzw3rWWm39stsf/view)
   - File Format: CSV
 ## Libraries Used
  - pandas: For handling the dataset and data manipulations.
