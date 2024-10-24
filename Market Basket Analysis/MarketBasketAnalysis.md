@@ -12,7 +12,6 @@ In this project, we leverage the FP-Growth algorithm,to identify frequent itemse
 To run the code successfully, the following Python libraries are required:
  - pandas: For data loading and manipulation.
  - mlxtend: For applying Market Basket Analysis using the Apriori algorithm and association rules.
- - numpy: For handling numerical operations.
  - matplotlib or seaborn: For data visualization.
    
 ## How to Run the Code
