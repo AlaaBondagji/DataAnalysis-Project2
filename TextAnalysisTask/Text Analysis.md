@@ -14,10 +14,19 @@ This project involves applying Sentiment Analysis to a dataset that contains mes
  - plotly: For interactive visualizations such as bar charts.
  - collections: To count and work with word frequency.
 ## How to Run the Code
- - Step1: Clone the Repository Clone the repository to your local machine.
- - Step2: Prepare the Environment Install the required dependencies by running
- - Step3: Download the Dataset Place the dataset file (spam_Emails_data) in the data/ directory.
- - Step4: Run the Jupyter Notebook Open the Jupyter notebook main_code.ipynb in your environment and run all cells to execute the code.
+   Step1: Clone the Repository Clone the repository to your local machine.
+
+   Step 2: Place the Dataset: Ensure that the file (spam_Emails_data.csv) is placed in the project folder.
+
+   Step3: Open the Jupyter notebook named main_code.ipynb and run all cells to execute the code. This will include:
+    
+    - Loading the dataset using the pandas library.
+    - Preprocessing the data by cleaning the text and removing unnecessary words.
+    - Applying the Naive-Bayes classification model to determine whether the messages are Spam or Ham.
+    - Generating word clouds to visualize the most common words in each category.
+
+ Step4: View the Results
+   - After execution, the results will display, including word clouds and the top 10 most common words in each category (Spam and Ham).
 ## How the Dataset Was Used
 1. Data Preprocessing:
  - Text Cleaning: The raw text in the dataset was cleaned by converting it to lowercase, removing URLs, special characters, punctuation, and numbers. This step ensures that only meaningful words are kept for analysis.
