@@ -13,6 +13,7 @@ This project involves applying Sentiment Analysis to a dataset that contains mes
  - nltk: For natural language processing, including stop words and lemmatization.
  - plotly: For interactive visualizations such as bar charts.
  - collections: To count and work with word frequency.
+ - sklearn: Machine learning algorithms (Naive Bayes classifiers) and metric
 ## How to Run the Code
    Step1: Clone the Repository Clone the repository to your local machine.
 
@@ -28,14 +29,20 @@ This project involves applying Sentiment Analysis to a dataset that contains mes
  Step4: View the Results
    - After execution, the results will display, including word clouds and the top 10 most common words in each category (Spam and Ham).
 ## How the Dataset Was Used
-1. Data Preprocessing:
- - Text Cleaning: The raw text in the dataset was cleaned by converting it to lowercase, removing URLs, special characters, punctuation, and numbers. This step ensures that only meaningful words are kept for analysis.
- - Stop Words Removal: Common English stop words (e.g., 'the', 'and', 'is') were removed from the text to reduce noise and focus on more important words.
- - Frequent Words Removal: The most frequent words that occur in the text were identified and removed. These words may appear too often and provide little value for distinguishing between sentiments (spam or ham).
- - Lemmatization: Words in the dataset were lemmatized using the NLTK WordNetLemmatizer to convert them to their base form (e.g., 'running' becomes 'run'). This reduces the complexity of the dataset and helps create better features for the model.
-2. Sentiment Analysis:
- - Classification: Sentiment analysis was applied to the preprocessed text using the Naive-Bayes Classifier to identify whether each message is spam or ham. The classifier was trained to recognize patterns in the text to accurately predict the sentiment.
- - Visualization: Word clouds were generated to visually explore the most frequent words in spam and ham messages. Bar charts were also used to show the top 10 most common words in each category.
-3. Analysis Goal:
- - The goal of the analysis was to detect and categorize text messages as spam or ham based on their content. This classification can help in filtering unwanted messages, improving user experience in messaging services, and preventing spam.
+1-Data Preprocessing:
+  - Text Cleaning:
+Convert text to lowercase and remove URLs, special characters, punctuation, and numbers to retain meaningful words.
+  - Stop Words Removal:
+Filter out common words that don’t add value (e.g., “the,” “and”).
+  - Frequent Words Removal:
+Remove high-frequency words that are not relevant for classification.
+  - Lemmatization:
+Standardize words to their root forms, reducing vocabulary complexity and improving feature creation.
+
+2-Sentiment Analysis:
+   - Classification: Applied Naive Bayes Classifier to categorize messages as spam or ham.
+   - Visualization: Generated word clouds to highlight common words in spam and ham messages. Bar charts show the top 10 frequent words in each category.
+
+3-Analysis Goal:
+The goal is to classify text messages as spam or ham to filter out unwanted messages, enhancing the user experience in messaging services and reducing spam.
 
